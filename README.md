@@ -1,11 +1,26 @@
-<div align="center">
+# Laptop Price Predictor
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Estimate the resale price of a used laptop with on-device Random Forest inference.
 
-  <h1>Built with AI Studio</h2>
+## Overview
+This web application is a React & TypeScript rewrite of the Android Laptop Price Predictor app. It runs full machine learning inference in the browser using the pre-trained Random Forest model (`rf_model.json`), preserving feature encoding, model structure, and prediction behavior.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Features
+- **Brand Selection**: HP, Dell, Lenovo, Asus, Acer, Apple, MSI, Other
+- **Processor**: Intel i3/i5/i7/i9, AMD Ryzen 3/5/7, Other
+- **Memory & Storage**: RAM (4 GB - 64 GB), Storage (128 GB - 2 TB), Storage Type (HDD, SSD, SSD + HDD)
+- **Age & GPU**: Age input (0 to 10 years) with real-time numeric validation, dedicated graphics option
+- **Condition**: Like New, Good, Fair, Poor
+- **Instant Client-Side Inference**: 30-tree decision forest evaluated directly in-browser
+- **Indian Rupee (₹) Currency Display**: Rounded to nearest 100 with locale formatting
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Development
+```bash
+npm install
+npm run dev
+```
 
-</div>
+Build for production:
+```bash
+npm run build
+```
